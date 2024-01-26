@@ -1,0 +1,29 @@
+.navBar {
+    background-color: #81a6cb; /* Blueish grey color */
+    height: 10vh; /* 15% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navBar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .navBar li {
+    margin: 0 10px;
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navBar a:hover {
+    color: #ffcc00; /* Change color on hover */
+  }
