@@ -1,5 +1,5 @@
 .navBar {
-    background-color: #81a6cb; /* Blueish grey color */
+    background-color: #70a3d5; /* Blueish grey color */
     height: 10vh; /* 15% of the viewport height */
     display: flex;
     justify-content: center;
@@ -14,7 +14,9 @@
   }
   
 .navBar li {
+  
     margin: 0 10px;
+    font-size: 50px;
   }
   
 .navBar a {
@@ -51,7 +53,6 @@
   
 .sidebar li {
     margin: 0px 0;
-    /* padding-left: 15px; */
     font-size: 20px;
     width: 100%; /* Set the width to 100% */
     padding: 10px 10px; /* Apply padding to the anchor tag */
@@ -70,5 +71,5 @@
   }
 
 .sidebar li:hover{
-    background-color: royalblue; /* Change background color of the list item on hover */
+    background-color: rgb(1, 123, 255); /* Change background color of the list item on hover */
 }
