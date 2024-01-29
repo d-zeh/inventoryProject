@@ -75,34 +75,52 @@
     background-color: rgb(1, 123, 255); /* Change background color of the list item on hover */
 }
 
-.rectangles {
-  position: absolute; /* Position the rectangles relative to the viewport */
+
+
+.rectangle {
+  position: absolute; /* Position the rectangles absolutely */
+  background-color: white; /* Set background color of the rectangle */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507); /* Add drop shadow to the rectangle */
+}
+
+.rectangle img {
+  max-width: 80%; /* Set the maximum width of the image to 100% of the rectangle */
+  max-height: 80%; /* Set the maximum height of the image to 100% of the rectangle */
+  position: absolute; /* Position the image absolutely within the rectangle */
+  top: 0; /* Align the top of the image with the top of the rectangle */
+  left: 0; /* Align the left of the image with the left of the rectangle */
+
+  margin: auto; /* Center the image within the rectangle */
+}
+
+/* .rectangles {
+  position: absolute; /
   top: 50%; 
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the rectangles horizontally and vertically */
-  display: grid; /* Use CSS grid for layout */
+  transform: translate(-50%, -50%);
+  display: grid; 
   grid-template-columns: repeat(2, 30vw);
   grid-template-rows: repeat(2, 20vh);
   gap: 30px; 
 }
 
 .rectangle {
-  background-color: white; /* Set background color of the rectangle */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507); /* Add drop shadow to the rectangle */
+  background-color: white; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507); 
 }
 
 .rectangle:nth-child(1) {
-  background-color: #FF6347; /* Set background color of the first rectangle */
+  background-color: rgba(242, 133, 133);
 }
 
 .rectangle:nth-child(2) {
-  background-color: #6495ED; /* Set background color of the second rectangle */
+  background-color: rgba(255, 164, 71)
 }
 
 .rectangle:nth-child(3) {
-  background-color: #32CD32; /* Set background color of the third rectangle */
+  background-color: rgba(255, 252, 155)
 }
 
 .rectangle:nth-child(4) {
-  background-color: #FFD700; /* Set background color of the fourth rectangle */
-}
+  background-color: rgba(183, 229, 180)
+} */
