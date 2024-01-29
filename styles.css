@@ -1,6 +1,6 @@
 .navBar {
-    background-color: #70a3d5; /* Blueish grey color */
-    height: 10vh; /* 15% of the viewport height */
+    background-color: #70a3d5; 
+    height: 10vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,12 +28,12 @@
   }
   
 .navBar a:hover {
-    color: #ffcc00; /* Change color on hover */
+    color: #ffcc00; 
   }
 .sidebar {
-    background-color: #03021a; /* Blueish grey color */
-    width: 10vw; /* 15% of the viewport width */
-    height: 100vh; /* Full height of the viewport */
+    background-color: #03021a; 
+    width: 10vw; 
+    height: 100vh; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -55,9 +55,9 @@
 .sidebar li {
     margin: 0px 0;
     font-size: 20px;
-    width: 100%; /* Set the width to 100% */
-    padding: 10px 10px; /* Apply padding to the anchor tag */
-    display: block; /* Make the anchor tag a block-level element */
+    width: 100%; 
+    padding: 10px 10px; 
+    display: block; 
     transition: color 0.3s ease, background-color 0.3s ease; 
   }
   
@@ -68,59 +68,38 @@
     transition: color 0.3s ease;
   }
   .sidebar a:hover {
-    color: #ffcc00; /* Change text color on hover */
+    color: #ffcc00; 
   }
-
 .sidebar li:hover{
-    background-color: rgb(1, 123, 255); /* Change background color of the list item on hover */
+    background-color: rgb(1, 123, 255); 
 }
 
 
 
-.rectangle {
-  position: absolute; /* Position the rectangles absolutely */
-  background-color: white; /* Set background color of the rectangle */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507); /* Add drop shadow to the rectangle */
+.rectangle{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: left;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
 }
 
 .rectangle img {
-  max-width: 80%; /* Set the maximum width of the image to 100% of the rectangle */
-  max-height: 100%; /* Set the maximum height of the image to 100% of the rectangle */
-  position: absolute; /* Position the image absolutely within the rectangle */
-  top: 0; /* Align the top of the image with the top of the rectangle */
-  left: 0; /* Align the left of the image with the left of the rectangle */
-
-  margin: auto; /* Center the image within the rectangle */
+  max-width: 80%; 
+  max-height: 100%; 
+  top: 0; 
+  left: 0; 
+  margin-right: 10px;
 }
 
-/* .rectangles {
-  position: absolute; /
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid; 
-  grid-template-columns: repeat(2, 30vw);
-  grid-template-rows: repeat(2, 20vh);
-  gap: 30px; 
+.text {
+  font-size: 2em;
+  margin-left: 0px;
+  word-wrap: break-word;
+  color: grey;
+  
 }
 
-.rectangle {
-  background-color: white; 
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507); 
+.rectangle:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Lighter background color on hover */
 }
-
-.rectangle:nth-child(1) {
-  background-color: rgba(242, 133, 133);
-}
-
-.rectangle:nth-child(2) {
-  background-color: rgba(255, 164, 71)
-}
-
-.rectangle:nth-child(3) {
-  background-color: rgba(255, 252, 155)
-}
-
-.rectangle:nth-child(4) {
-  background-color: rgba(183, 229, 180)
-} */
