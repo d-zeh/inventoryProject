@@ -14,9 +14,7 @@ function fibonacciGenerator (n) {
 
             let y = answer[answer.length-1]
             let x = answer[answer.length-2]
-            console.log(x)
-            console.log(y)
-            answer.push(y-x)
+            answer.push(y+x)
         }
         return answer;
         
@@ -32,3 +30,13 @@ function fibonacciGenerator (n) {
 
     console.log(fibonacciGenerator(10
         ))
+
+
+function BellBoy(name, age, height) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+}
+
+let bell1 = new BellBoy("timmy", 10, 6)
+console.log(bell1)
