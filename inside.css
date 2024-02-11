@@ -74,24 +74,9 @@
     background-color: rgb(1, 123, 255); 
 }
 
-
-
-.rectangle{
-  position: absolute;
+.content {
   display: flex;
-  align-items:center;
-  justify-content: left;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
-  text-decoration: none; /* Remove underline for anchor tags */
-  color: inherit; /* Inherit text color from parent */
-}
-
-.rectangle img {
-  max-width: 80%; 
-  max-height: 100%; 
-  top: 0; 
-  left: 0; 
-  margin-right: 10px;
+  flex: 1;
 }
 
 .text {
@@ -102,6 +87,7 @@
   
 }
 
-.rectangle:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Lighter background color on hover */
+.main {
+  flex: 1;
+  padding: 20px;
 }
