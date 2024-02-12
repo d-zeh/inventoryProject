@@ -13,5 +13,6 @@ app.get('http://localhost:5500/api/inventory', (req,res)=> {
 })
 
 
+//require not running 
 const SERVER_PORT = '5500';
 app.listen(SERVER_PORT,() => console.log(`up and running on ${SERVER_PORT}`)) 
