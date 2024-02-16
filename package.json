@@ -3,5 +3,15 @@
     "axios": "^1.6.7",
     "cors": "^2.8.5",
     "express": "^4.18.2"
-  }
+  },
+  "name": "inventoryproject",
+  "version": "1.0.0",
+  "main": "inside.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
