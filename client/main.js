@@ -8,6 +8,7 @@ function sampleText() {
      //Select, delete, edit
      card.innerHTML = `
      <div> Words 
+     create box tag and append information here, add buttonstpp
      YAYYYYYYYY</div>
      `
 
