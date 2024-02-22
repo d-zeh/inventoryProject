@@ -8,15 +8,15 @@ app.use(express.json());
 const {
     getProducts,
     deleteProduct, 
-    updateProduct, 
-    createProduct
-} = require('../contoller.js')
+    // updateProduct, 
+    // createProduct
+} = require('../controller')
 
 
 app.get(`/api/products`, getProducts)
 app.delete(`/api/products/:id`, deleteProduct)
-app.post(`/api/product`, createProduct)
-app.put(`/api/product/:id`, updateProduct)
+// app.post(`/api/product`, createProduct)
+// app.put(`/api/product/:id`, updateProduct)
 
 
 
