@@ -23,6 +23,7 @@ const getAllProducts = () => {
 function getProductsScreen() {
      const card = document.createElement('div')
      card.style.display = 'flex';
+     //note to self, check on flex index soon 
      const nameCell = document.createElement('div');
      nameCell.textContent = database.name;
      nameCell.style.flex = '1';
