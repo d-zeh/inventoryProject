@@ -12,20 +12,20 @@ let database =
           price: 50,
           quantity: 3,
 
-      },
-      {    name: "Protein",
-          proteinAmount: 100,
-          price: 50,
-          quantity: 3,
-
       }
      ]
 
 
 const getAllProducts = () => {
      axios.get('http:/localhost:4004/api/products')
-     .then()
-}
+     .then(response => {
+          database = response.data;
+          getProductsScreen();
+     })
+     .catch(error => {
+          console.log('Error GET fetching products', error);
+     });
+};
 
 function getProductsScreen() {
      for(let i = 0; i < database.length; i++){
@@ -52,10 +52,9 @@ function getProductsScreen() {
      }
 }
 
-
 const getButton = document.getElementById('getAll')
+getButton.addEventListener('click', getAllProducts)
 console.log("ho")
 
 
-getButton.addEventListener('click', getProductsScreen)
 
