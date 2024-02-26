@@ -10,16 +10,9 @@ const getAllProducts = () => {
      axios.get('http:/localhost:4004/api/products')
      .then()
 }
-
 //Delete Function
 //Put Function
 //Counter????
-
-
-
-
-
-
 function getProductsScreen() {
      const card = document.createElement('div')
      card.style.display = 'flex';
@@ -47,20 +40,7 @@ function getProductsScreen() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//feed in database, maybe fake database for now through VScode
 
 
 
