@@ -1,19 +1,5 @@
 const mainBox = document.querySelector('.main')
-let database = 
-     [
-          {name: "Protein",
-          proteinAmount: 100,
-          price: 50,
-          quantity: 3,
-     }
-     ,
-      {    name: "Protein",
-          proteinAmount: 100,
-          price: 50,
-          quantity: 3,
 
-      }
-     ]
 
 
 const getAllProducts = () => {

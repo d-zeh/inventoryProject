@@ -1,5 +1,5 @@
 const products = require('./db.json')
-let globalId = 11;
+let globalId = 2;
 
 module.exports = {
     getProducts: (req,res) => {
