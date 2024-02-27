@@ -3,6 +3,7 @@ const mainBox = document.querySelector('.main')
 
 
 const getAllProducts = () => {
+     console.log("here")
      axios.get('http:/localhost:4004/api/products')
      .then(response => {
           database = response.data;

@@ -14,7 +14,7 @@ const {
 
 
 app.get(`http:/localhost:4004/api/products`, getProducts)
-app.delete(`/api/products/:id`, deleteProduct)
+// app.delete(`/api/products/:id`, deleteProduct)
 // app.post(`/api/product`, createProduct)
 // app.put(`/api/product/:id`, updateProduct)
 
