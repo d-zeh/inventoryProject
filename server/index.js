@@ -13,7 +13,7 @@ const {
 } = require('../controller')
 
 
-app.get(`http:/localhost:4004/api/products`, getProducts)
+app.get(`/api/products`, getProducts)
 // app.delete(`/api/products/:id`, deleteProduct)
 // app.post(`/api/product`, createProduct)
 // app.put(`/api/product/:id`, updateProduct)
@@ -22,5 +22,5 @@ app.get(`http:/localhost:4004/api/products`, getProducts)
 
 console.log("hi")
 
-const SERVER_PORT = '5500';
+const SERVER_PORT = '4004';
 app.listen(SERVER_PORT,() => console.log(`up and running on ${SERVER_PORT}`)) 

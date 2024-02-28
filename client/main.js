@@ -3,18 +3,18 @@ const mainBox = document.querySelector('.main')
 
 
 const getAllProducts = () => {
-     console.log("here")
-     axios.get('http:/localhost:4004/api/products')
+     axios.get('http://localhost:4004/api/products')
      .then(response => {
           database = response.data;
-          getProductsScreen();
+          console.log(database)
+          getProductsScreen(database);
      })
      .catch(error => {
           console.log('Error GET fetching products', error);
      });
 };
 
-function getProductsScreen() {
+function getProductsScreen(database) {
      for(let i = 0; i < database.length; i++){
           const card = document.createElement('div')
           card.style.display = 'flex';

@@ -1,8 +1,9 @@
 const products = require('./db.json')
-let globalId = 2;
+let globalId = 3;
 
 module.exports = {
     getProducts: (req,res) => {
+        console.log("controller")
         res.status(200)
         .send(products)
     },
