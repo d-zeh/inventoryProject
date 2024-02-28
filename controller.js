@@ -13,5 +13,8 @@ module.exports = {
         products.splice(index,1)
         res.status(200).send(products)
     },
+    createProduct: (req,res) => {
+        
+    }
      
 }
