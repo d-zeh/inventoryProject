@@ -14,7 +14,17 @@ module.exports = {
         res.status(200).send(products)
     },
     createProduct: (req,res) => {
-        
+        let{ name, proteinAmount, price, quantity} = req.body
+        let newProduct = {
+            name,
+            proteinAmount,
+            price,
+            quantity
+        }
+        products.push(newProduct)
+        res.status(200).send(products)
+        globalId++;
+
     }
      
 }
