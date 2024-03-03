@@ -23,6 +23,29 @@ const createProducts = (body) => {
 
 
 
+
+function addProduct(e) {
+     e.preventDefault();
+
+     let name = document.querySelector('#name')
+     let protein = document.querySelector('#protein')
+     let price = document.querySelector('#price')
+     let quanity = document.querySelector('#quantity')
+
+     let object = {
+          name: name.value
+     }
+}
+
+
+
+
+
+
+
+
+
+
 function getProductsScreen(database) {
      for(let i = 0; i < database.length; i++){
           const card = document.createElement('div')
