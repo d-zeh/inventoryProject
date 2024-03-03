@@ -1,18 +1,27 @@
 const mainBox = document.querySelector('.main')
 
 
-
-const getAllProducts = () => {
-     axios.get('http://localhost:4004/api/products')
+//Get Button
+const getAllProducts = () => {axios.get('http://localhost:4004/api/products')
      .then(response => {
-          database = response.data;
-          console.log(database)
-          getProductsScreen(database);
+          console.log(response.data)
+          getProductsScreen(response.data);
+     }).catch(error => {console.log('Error GET fetching products', error);});};
+
+//Create Button
+const createProducts = (body) => {
+     axios.post('http://localhost:4004/api/products',body)
+     .then(response => {
+          // database = response.data;
+          // console.log(database)
+          // getProductsScreen(database);
      })
      .catch(error => {
           console.log('Error GET fetching products', error);
      });
 };
+
+
 
 function getProductsScreen(database) {
      for(let i = 0; i < database.length; i++){
@@ -42,6 +51,7 @@ function getProductsScreen(database) {
 const getButton = document.getElementById('getAll')
 getButton.addEventListener('click', getAllProducts)
 console.log("ho")
+
 
 
 
