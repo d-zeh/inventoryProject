@@ -33,8 +33,12 @@ function addProduct(e) {
      let quanity = document.querySelector('#quantity')
 
      let object = {
-          name: name.value
+          name: name.value,
+          protein: protein.value,
+          price: price.value,
+          quanity: quanity.value
      }
+     console.log(object)
 }
 
 
