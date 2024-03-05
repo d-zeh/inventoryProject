@@ -39,6 +39,8 @@ function addProduct(e) {
           quanity: quanity.value
      }
      console.log(object)
+
+     createProducts(object)
 }
 
 
@@ -80,6 +82,7 @@ getButton.addEventListener('click', getAllProducts)
 console.log("ho")
 
 
-
+const submitButton = document.getElementById('post')
+submitButton.addEventListener('click', addProduct)
 
 
