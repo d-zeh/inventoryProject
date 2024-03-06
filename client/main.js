@@ -15,6 +15,7 @@ const createProducts = (body) => {
           // database = response.data;
           // console.log(database)
           // getProductsScreen(database);
+          console.log(body)
      })
      .catch(error => {
           console.log('Error GET fetching products', error);
