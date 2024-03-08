@@ -12,10 +12,9 @@ const getAllProducts = () => {axios.get('http://localhost:4004/api/products')
 const createProducts = (body) => {
      axios.post('http://localhost:4004/api/products',body)
      .then(response => {
-          // database = response.data;
-          // console.log(database)
-          // getProductsScreen(database);
+
           console.log(response)
+          //make data populate through css and html
      })
      .catch(error => {
           console.log('Error PUT fetching products', error);
