@@ -15,10 +15,10 @@ const createProducts = (body) => {
           // database = response.data;
           // console.log(database)
           // getProductsScreen(database);
-          console.log(body)
+          console.log(response)
      })
      .catch(error => {
-          console.log('Error GET fetching products', error);
+          console.log('Error PUT fetching products', error);
      });
 };
 

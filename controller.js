@@ -14,10 +14,10 @@ module.exports = {
         res.status(200).send(products)
     },
     createProduct: (req,res) => {
-        let{ name, proteinAmount, price, quantity} = req.body
+        let{ name, protein, price, quantity} = req.body
         let newProduct = {
             name,
-            proteinAmount,
+            protein,
             price,
             quantity
         }
