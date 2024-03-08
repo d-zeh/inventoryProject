@@ -15,7 +15,7 @@ const {
 
 app.get(`/api/products`, getProducts)
 // app.delete(`/api/products/:id`, deleteProduct)
-app.post(`/api/product`, createProduct)
+app.post(`/api/products`, createProduct)
 // app.put(`/api/product/:id`, updateProduct)
 
 
