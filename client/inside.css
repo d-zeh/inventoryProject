@@ -92,3 +92,11 @@
   padding: 20px;
 }
 
+.addProductContainer {
+  background-color: #f0f0f0; /* Light grey background color */
+  border: 2px solid #70a3d5; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin: 0 auto; /* Center the box horizontally */
+  max-width: 500px; /* Limit the width of the box */
+}
