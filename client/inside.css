@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Avant Garde Gothic";
+  src: url(avantgardegothic.woff);
+}
+
+
 .navBar {
     background-color: #70a3d5; 
     height: 10vh; 
@@ -99,4 +105,8 @@
   padding: 20px; /* Padding inside the box */
   margin: 0 auto; /* Center the box horizontally */
   max-width: 500px; /* Limit the width of the box */
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
