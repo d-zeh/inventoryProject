@@ -37,22 +37,27 @@
 <div class = "main">
 
 <div class="addProductContainer">
-  Add Product:
-  
-  Fill in all categories below to submit product
-  <div></div>
+  <div id="title">
+    Add Product:
+    Fill in all categories below to submit product
+    </div>
+  <br>
   <label for="name">Product name: </label>
   <input type="text" name="name" id="name"></input>
-  <div></div>
-  <label for="protein">Protein Amount: </label>
-  <input type="number" name="protein" id="protein"></input>
-  <div></div>
+  <br>
+  <label for="protein">Protein Amount per Servng: </label>
+  <input type="number" name="protein" id="protein" placeholder="grams"></input>
+  <br>
   <label for="quantity">Quantity: </label>
-  <input type="number" name="quantity" id="quantity"></input>
-  <div></div>
+  <input type="number" name="quantity" id="quantity" placeholder="servings"></input>
+  <br>
   <label for="price">MSRP: </label>
-  <input type="number" name="price" id="price"> Hi</input>
+  <input type="number" name="price" id="price" placeholder="US Dollar"></input>
+  <br>
+  <label for="price">Image URL: </label>
+  <input type="text" name="picture" id="picture"></input>
   
+  <br>
   <button type="submit" id="post">Submit</button>
 
 
