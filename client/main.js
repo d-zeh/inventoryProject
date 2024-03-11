@@ -56,9 +56,11 @@ function getProductsScreen(database) {
      for(let i = 0; i < database.length; i++){
           const card = document.createElement('div')
           card.style.display = 'flex';
+
           const nameCell = document.createElement('div');
           nameCell.textContent = database[i].name;
           nameCell.style.flex = '1';
+
           const proteinAmountCell = document.createElement('div');
           proteinAmountCell.textContent = database[i].proteinAmount;
           proteinAmountCell.style.flex = '1';
@@ -68,10 +70,18 @@ function getProductsScreen(database) {
           const quantityCell = document.createElement('div');
           quantityCell.textContent = database[i].quantity;
           quantityCell.style.flex = '1'; 
+
+          const image = document.createElement('img');
+          image.src = database[i].imageURL;
+          image.style.maxWidth = '100px'; // Set the max width of the image
+          image.style.maxHeight = '100px'; // Set the max height of the image
+
           card.appendChild(nameCell);
           card.appendChild(proteinAmountCell);
           card.appendChild(priceCell);
           card.appendChild(quantityCell);
+          card.appendChild(image); // Append the image to the card
+
           mainBox.appendChild(card);
           mainBox.appendChild(card)
      }

@@ -1,24 +1,25 @@
 [
     {
-    "name": "Protein",
-    "proteinAmount": 100,
-    "price": 50,
-    "quantity": 3
+    "name": "Optimum Nutrition - Gold Standard",
+    "proteinAmount": 24,
+    "price": 33.99,
+    "quantity": 73,
+    "imageURL": "https://content.optimumnutrition.com/i/on/on-gold-standard-100-whey-protein_Image_06?$TTL_PRODUCT_IMAGES$&locale=en-us,en-gb,*&w=509&sm=aspect&aspect=1:1&fmt=webp"
 }
 ,
 {    
-    "name": "Protein",
-    "proteinAmount": 100,
-    "price": 50,
-    "quantity": 3
-
+    "name": "GHOST - Chips Ahoy!",
+    "proteinAmount": 25,
+    "price": 44.99,
+    "quantity": 26,
+    "imageURL":"https://www.gnc.com/dw/image/v2/BBLB_PRD/on/demandware.static/-/Sites-master-catalog-gnc/default/dwdbf769a4/hi-res/GHOST_2023_Updates/527950_GHOST_Whey_Protein_Chips_Ahoy_Front_2023.jpg?sw=1500&sh=1500&sm=fit"
 }
 ,
 {    
-    "name": "Yas Queen",
-    "proteinAmount": 69,
-    "price": 50,
-    "quantity": 3
-
+    "name": "Dynamtize ISO 100 - Gourmet Vanilla",
+    "proteinAmount": 25,
+    "price": 42.88,
+    "quantity": 20,
+    "imageURL": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT_8oTo_Vae7SxSQXoPyb1xviKWcGpZOzApizoqiPCTWMLcRj1p4beeskh3Fc9o2RykS3K16UfKxct2rSUJelZ9-F79rpMtfhnB-ASXsppsJkw8XsXHHpcabus"
 }
 ]
