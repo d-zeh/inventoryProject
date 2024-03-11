@@ -15,6 +15,7 @@ const createProducts = (body) => {
 
           console.log(response)
           //make data populate through css and html
+          displayRecentProducts(response.data);
      })
      .catch(error => {
           console.log('Error PUT fetching products', error);
@@ -31,17 +32,33 @@ function addProduct(e) {
      let protein = document.querySelector('#protein')
      let price = document.querySelector('#price')
      let quanity = document.querySelector('#quantity')
+     let image = document.querySelector('#picture')
 
      let object = {
           name: name.value,
           protein: protein.value,
           price: price.value,
-          quanity: quanity.value
+          quanity: quanity.value,
+          image: image.value
+
      }
      console.log(object)
 
      createProducts(object)
 }
+
+function displayRecentProducts(products) {
+     // Clear the existing content in the "hi" section
+     let recentlyAddedSection = document.querySelector('#recentlyAdded');
+     recentlyAddedSection.innerHTML = '';
+ 
+     // Create a new list element for each product and append it to the "hi" section
+     products.forEach(product => {
+         let listItem = document.createElement('li');
+         listItem.textContent = product.name;
+         recentlyAddedSection.appendChild(listItem);
+     });
+ }
 
 
 
