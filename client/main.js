@@ -1,6 +1,5 @@
 const mainBox = document.querySelector('.main')
 
-
 //Get Button
 const getAllProducts = () => {axios.get('http://localhost:4004/api/products')
      .then(response => {
@@ -8,12 +7,12 @@ const getAllProducts = () => {axios.get('http://localhost:4004/api/products')
           getProductsScreen(response.data);
      }).catch(error => {console.log('Error GET fetching products', error);});};
 
+
 //Create Button
 const createProducts = (body) => {
      axios.post('http://localhost:4004/api/products',body)
      .then(response => {
-
-          //console.log(response)
+          console.log(response)
           //make data populate through css and html
           displayRecentProducts(response.data);
      })
@@ -24,16 +23,13 @@ const createProducts = (body) => {
 
 
 
-
 function addProduct(e) {
      e.preventDefault();
-
      let name = document.querySelector('#name')
      let protein = document.querySelector('#protein')
      let price = document.querySelector('#price')
      let quanity = document.querySelector('#quantity')
      let image = document.querySelector('#picture')
-
      let object = {
           name: name.value,
           protein: protein.value,
@@ -43,14 +39,13 @@ function addProduct(e) {
 
      }
      console.log(object)
-
      createProducts(object)
 }
 
 function displayRecentProducts(products) {
      // Clear the existing content in the "hi" section
      let recentlyAddedSection = document.querySelector('#recentlyAdded');
-     recentlyAddedSection.innerHTML = '';
+     recentlyAddedSection.innerHTML = 'hi';
  
      // Create a new list element for each product and append it to the "hi" section
      products.forEach(product => {
@@ -104,12 +99,14 @@ function getProductsScreen(database) {
      }
 }
 
-const getButton = document.getElementById('getAll')
-getButton.addEventListener('click', getAllProducts)
+// const getButton = document.getElementById('getAll')
+// getButton.addEventListener('click', getAllProducts)
 console.log("ho")
 
+let sayHi = () =>{
+     console.log('hi')
+}
 
 const submitButton = document.getElementById('post')
 submitButton.addEventListener('click', addProduct)
-
 
