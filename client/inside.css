@@ -130,6 +130,7 @@
   margin: 20px auto; /* Center the box horizontally with top and bottom margin */
   max-width: 500px; /* Limit the width of the box */
   font-family: "Nunito", sans-serif;
+  height: fit-content;
 }
 
 #recentlyAdded h2 {
