@@ -13,7 +13,7 @@ const createProducts = (body) => {
      axios.post('http://localhost:4004/api/products',body)
      .then(response => {
 
-          console.log(response)
+          //console.log(response)
           //make data populate through css and html
           displayRecentProducts(response.data);
      })
