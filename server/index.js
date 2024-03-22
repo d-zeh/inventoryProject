@@ -18,8 +18,6 @@ app.get(`/api/products`, getProducts)
 app.post(`/api/products`, createProduct)
 // app.put(`/api/product/:id`, updateProduct)
 
-
-
 console.log("hi")
 
 const SERVER_PORT = '4004';
