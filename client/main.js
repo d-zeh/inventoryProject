@@ -14,6 +14,7 @@ const createProducts = (body) => {
      .then(response => {
           console.log(response)
           //make data populate through css and html
+          
           displayRecentProducts(response.data);
      })
      .catch(error => {
@@ -42,25 +43,29 @@ function addProduct(e) {
      createProducts(object)
 }
 
+
+
 function displayRecentProducts(products) {
      // Clear the existing content in the "hi" section
      let recentlyAddedSection = document.querySelector('#recentlyAdded');
-     recentlyAddedSection.innerHTML = 'hi';
- 
+     recentlyAddedSection.innerHTML = 'RECENTLY ADDED PRODUCTS';
+     
+     let newProducts = [];
+
+     for (let i = products.length -3  ; i > 0 ; i--) {
+          newProducts.push(products[i])
+          console.log(products[i])
+     }
+     
+     
+
      // Create a new list element for each product and append it to the "hi" section
-     products.forEach(product => {
+     newProducts.forEach(product => {
          let listItem = document.createElement('li');
          listItem.textContent = product.name;
          recentlyAddedSection.appendChild(listItem);
      });
  }
-
-
-
-
-
-
-
 
 
 
