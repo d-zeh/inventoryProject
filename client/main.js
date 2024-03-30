@@ -56,9 +56,6 @@ function displayRecentProducts(products) {
           newProducts.push(products[i])
           console.log(products[i])
      }
-     
-     
-
      // Create a new list element for each product and append it to the "hi" section
      newProducts.forEach(product => {
          let listItem = document.createElement('li');
